@@ -79,33 +79,65 @@ const createNewsItems = (ary, articleId) => {
 
     let data = ary[0];
 
-    let sectionTag = createEl("section", "card");
-    let articleTag = document.getElementById(articleId);
-    articleTag.appendChild(sectionTag);
+    //for ad display
+    if (data.sectionName == "AD") {
+        let sectionTag = createEl("section", "card");
+        sectionTag.setAttribute("id", "sectionForAd");
+        let articleTag = document.getElementById(articleId);
+        articleTag.appendChild(sectionTag);
+        let cardBadge = createEl("div", "cardbadge");
+        let text = document.createTextNode(data.sectionName);
+        cardBadge.appendChild(text);
+        sectionTag.appendChild(cardBadge);
+
+        window.google_ad_client = "123456789";
+        window.google_ad_slot = "123456789";
+        window.google_ad_width = 200;
+        window.google_ad_height = 200;
+
+        // container is where you want the ad to be inserted
+        var container = document.getElementById('sectionForAd');
+        var w = document.write;
+        document.write = function (content) {
+            container.innerHTML = "Advertisement";
+            document.write = w;
+        };
+
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://pagead2.googlesyndication.com/pagead/show_ads.js';
+        document.body.appendChild(script);
+
+    } else {
+
+        let sectionTag = createEl("section", "card");
+        let articleTag = document.getElementById(articleId);
+        articleTag.appendChild(sectionTag);
 
 
-    let cardBadge = createEl("div", "cardbadge");
-    let text = document.createTextNode(data.sectionName);
-    cardBadge.appendChild(text);
-    sectionTag.appendChild(cardBadge);
+        let cardBadge = createEl("div", "cardbadge");
+        let text = document.createTextNode(data.sectionName);
+        cardBadge.appendChild(text);
+        sectionTag.appendChild(cardBadge);
 
 
-    let imgCard = createEl("img", "imgCard");
-    imgCard.src = data.urlToImage;
-    sectionTag.appendChild(imgCard);
+        let imgCard = createEl("img", "imgCard");
+        imgCard.src = data.urlToImage;
+        sectionTag.appendChild(imgCard);
 
-    let len = ary.length > 4 ? 4 : ary.length;
+        let len = ary.length > 4 ? 4 : ary.length;
 
-    for (let i = 0; i < len; i++) {
-        let containerTag = createEl("div", "container");
-        let textTag = document.createTextNode(ary[i].title);
-        containerTag.appendChild(textTag);
-        sectionTag.appendChild(containerTag);
+        for (let i = 0; i < len; i++) {
+            let containerTag = createEl("div", "container");
+            let textTag = document.createTextNode(ary[i].title);
+            containerTag.appendChild(textTag);
+            sectionTag.appendChild(containerTag);
+        }
+
+        let button = createEl("button", "btn");
+        button.innerHTML = "See All";
+        sectionTag.appendChild(button);
     }
-
-    let button = createEl("button", "btn");
-    button.innerHTML = "See All";
-    sectionTag.appendChild(button);
 }
 
 /* side bar news section */
