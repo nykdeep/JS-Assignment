@@ -7,18 +7,38 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.outerdiv1 {
+    display: grid;
+    /* grid-template-columns: 5fr 3fr;*/
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 20fr 10fr;
+    grid-gap: 15em;
+    grid-template-areas: "main sidebar";
+    max-width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .outerdiv {
+
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 4;
     max-width: 70%;
     width: 70%;
     padding: 10%, 1%;
     margin-left: 5%;
     margin-right: 5%;
+    overflow: hidden;
 
 
 }
 
 .sideSection {
-    width: 20%;
+    grid-area: sidebar;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 35%;
     height: 100%;
     padding-left: 15px;
     margin-left: 15px;
@@ -28,37 +48,48 @@ body {
 }
 
 .headerSec {
-    width: 80%;
-    height: 10%;
+    width: 65%;
+    height: 2%;
     font-size: medium;
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-left: 5em;
     padding: 0.7em;
     border-top: 2px solid rgb(172, 170, 170);
 }
 
+@media only screen and (max-width: 710px) {
+    .headerSec {
+        width: 62%;
+        margin-left: 3em;
+
+    }
+}
 
 .sidebarsection {
     display: flex;
     flex-direction: row-reverse;
     border-radius: 1px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(165, 163, 163);
     top: 0.2em;
     justify-content: center;
-    padding: 5%;
+    padding: 7%;
     margin: 2%;
-    max-width: 12em;
+    max-width: 20em;
     max-height: 7em;
+    width: 15em;
     overflow: hidden;
-    text-overflow: ellipsis;
+
 }
 
 .img {
     float: right;
-    margin-top: 1em;
-    width: 5em;
-    height: 3em;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    width: 5.5em;
+    height: 4em;
+    border-radius: 0.5em;
 }
 
 .article {
@@ -66,25 +97,31 @@ body {
     margin-top: 1em;
     display: flex;
     flex-wrap: wrap;
-    gap: 3em;
-    overflow: auto;
+    gap: 0.5em;
+    overflow: hidden;
     max-width: 80%;
 
 
 }
 
+.adSize {
+    width: 320px;
+    height: 100px;
+}
+
 .card {
     max-width: 40%;
-    max-height: 30em;
+    /* max-height: 35em; */
     margin: 1px;
     padding: 2px;
     border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     font-size: 12px;
-    flex: 1 0 41%;
+    flex: 1 0 48%;
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: lightgray;
+    background-color: rgb(248, 245, 245);
 
 }
 
@@ -99,20 +136,22 @@ body {
     font-weight: bold;
 }
 
-.imagCard {
-    width: 100%;
+.imgCard {
+    width: 95%;
     height: 90%;
     border-radius: 2px;
-    margin-bottom: 2px;
-    margin: 5px;
+    margin: 0.5em;
+    margin-top: 2.5em;
+
 
 }
 
 .container {
     padding: 10px 16px;
     width: 100%;
+    /*white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;*/
     background-color: white;
     font-size: small;
     font-family: 'Times New Roman', Times, serif;

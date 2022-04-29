@@ -1,6 +1,6 @@
 
 /* fetch JSON data and pass it to other functions */
-function fetchDataFromJson() {
+function fetchDataFromJsonForMain() {
     let jsonData;
     fetch('sideBarData.json')
         .then(res => res.json())
@@ -8,8 +8,26 @@ function fetchDataFromJson() {
             jsonData = data.data;
 
             if (jsonData.length) {
-                createSectionElement(jsonData);
                 getArticleData(jsonData);
+            }
+
+        })
+        .catch(error => {
+            document.getElementById("outerdiv").innerHTML = "Error Occured";
+            console.error('There was an error!', error);
+        });
+
+}
+
+function fetchDataFromJsonSideNewsList() {
+    let jsonData;
+    fetch('sideNewsBarList.json')
+        .then(res => res.json())
+        .then(data => {
+            jsonData = data.data;
+
+            if (jsonData.length) {
+                createSectionElement(jsonData);
             }
 
         })
@@ -34,14 +52,14 @@ const getArticleData = mainData => {
         let item = grpTitle[x];
         console.log(item);
         let headerTitle = createEl("header", "headerSec");
-        let headerId = "headerTitle" + (x + 1);
+        let headerId = `headerTitle ${x + 1}`;
         headerTitle.setAttribute("id", headerId);
 
         let textTag = document.createTextNode(item);
         headerTitle.appendChild(textTag);
 
         let artcileTag = createEl("article", "article");
-        let articleId = "article" + (x + 1);
+        let articleId = `article ${x + 1}`;
         artcileTag.setAttribute("id", articleId);
 
         let div = document.getElementById('outerdiv');
@@ -81,6 +99,7 @@ const createNewsItems = (ary, articleId) => {
 
     //for ad display
     if (data.sectionName == "AD") {
+
         let sectionTag = createEl("section", "card");
         sectionTag.setAttribute("id", "sectionForAd");
         let articleTag = document.getElementById(articleId);
@@ -90,23 +109,28 @@ const createNewsItems = (ary, articleId) => {
         cardBadge.appendChild(text);
         sectionTag.appendChild(cardBadge);
 
-        window.google_ad_client = "123456789";
-        window.google_ad_slot = "123456789";
-        window.google_ad_width = 200;
-        window.google_ad_height = 200;
 
-        // container is where you want the ad to be inserted
         var container = document.getElementById('sectionForAd');
-        var w = document.write;
-        document.write = function (content) {
-            container.innerHTML = "Advertisement";
-            document.write = w;
-        };
+
+        var externalScript = document.createElement("script");
+        externalScript.type = "text/javascript";
+        externalScript.setAttribute('async', 'async');
+        externalScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+
+        container.appendChild(externalScript);
+
+        let insTag = document.createElement("ins");
+        insTag.setAttribute("data-ad-client", "ca-pub-4304987187073743");
+        insTag.setAttribute("data-ad-slot", "7857064246");
+        // insTag.setAttribute("data-ad-format", "auto");
+        insTag.setAttribute("data-full-width-responsive", "true");
+        insTag.setAttribute("class", "adsbygoogle adSize");
+
+        container.appendChild(insTag);
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'https://pagead2.googlesyndication.com/pagead/show_ads.js';
-        document.body.appendChild(script);
+        container.appendChild(script);
 
     } else {
 
@@ -153,11 +177,12 @@ const createSectionElement = (sectionData) => {
         img.src = item.urlToImage;
         sectionTag.appendChild(img);
 
-        var text = document.createTextNode(item.title);
+        var text = document.createTextNode(item.articleList[0].articleTitle);
         sectionTag.appendChild(text);
 
     }
 }
 
-fetchDataFromJson();
+fetchDataFromJsonForMain();
+fetchDataFromJsonSideNewsList();
 

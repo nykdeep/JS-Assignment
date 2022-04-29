@@ -1,0 +1,334 @@
+{
+    "data": [
+        {
+            "sectionID": "1",
+            "articleList": [
+                {
+                    "articleId": "1001",
+                    "articleTitle": "GM expects to spend $2B on Cruise in 2022",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Rebecca Bellan"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/01/Cruise-car-in-Hayes-Valley-San-Francisco.jpg?w=711"
+        },
+        {
+            "sectionID": "15",
+            "articleList": [
+                {
+                    "articleId": "1002",
+                    "articleTitle": "Elon, you have no idea ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Devin Coldewey"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/GettyImages-1229901940.jpg?w=563"
+        },
+        {
+            "sectionID": "18",
+            "articleList": [
+                {
+                    "articleId": "1003",
+                    "articleTitle": "Daily Crunch: Experts say Musk's open-source vision ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall, Haje Jan Kamps"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        },
+        {
+            "sectionID": "56",
+            "articleList": [
+                {
+                    "articleId": "1004",
+                    "articleTitle": "Hello friends and welcome to Daily Crunch ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        },
+        {
+            "sectionID": "18",
+            "articleList": [
+                {
+                    "articleId": "1005",
+                    "articleTitle": "Elon Musk's Twitter deal includes a $1 billion ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Sarah pelin"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/03/twitter-crypto-coin-ico.png?w=711"
+        },
+        {
+            "sectionID": "33",
+            "articleList": [
+                {
+                    "articleId": "1006",
+                    "articleTitle": "Movie that makes headlines ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Sarah pelin"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/04/ontime.jpeg?w=600"
+        },
+        {
+            "sectionID": "336",
+            "articleList": [
+                {
+                    "articleId": "1007",
+                    "articleTitle": "Lucid lands 100K EV order from its Saudi investors ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Kirsten Korosec"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/IMG_2580.jpg?w=711"
+        },
+        {
+            "sectionID": "76",
+            "articleList": [
+                {
+                    "articleId": "1008",
+                    "articleTitle": "free speech, censorship, rights and privileg ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Devin Coldewey"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/GettyImages-1229901940.jpg?w=563"
+        },
+        {
+            "sectionID": "396",
+            "articleList": [
+                {
+                    "articleId": "1009",
+                    "articleTitle": "Robinhood to lay off 9% of full-time employees ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/robinhood-volatility.jpg?w=711"
+        },
+        {
+            "sectionID": "100",
+            "articleList": [
+                {
+                    "articleId": "1010",
+                    "articleTitle": "Elon Musk's Twitter deal includes a $1 billion ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/03/twitter-crypto-coin-ico.png?w=711"
+        },
+        {
+            "sectionID": "91",
+            "articleList": [
+                {
+                    "articleId": "1011",
+                    "articleTitle": "Daily Crunch: Experts say Musk's open-source vision ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        },
+        {
+            "sectionID": "1",
+            "articleList": [
+                {
+                    "articleId": "1201",
+                    "articleTitle": "GM expects to spend $2B on Cruise in 2022",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Rebecca Bellan"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/01/Cruise-car-in-Hayes-Valley-San-Francisco.jpg?w=711"
+        },
+        {
+            "sectionID": "15",
+            "articleList": [
+                {
+                    "articleId": "1102",
+                    "articleTitle": "Elon, you have no idea ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Devin Coldewey"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/GettyImages-1229901940.jpg?w=563"
+        },
+        {
+            "sectionID": "18",
+            "articleList": [
+                {
+                    "articleId": "1093",
+                    "articleTitle": "Daily Crunch: Experts say Musk's open-source vision ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall, Haje Jan Kamps"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        },
+        {
+            "sectionID": "56",
+            "articleList": [
+                {
+                    "articleId": "1074",
+                    "articleTitle": "Hello friends and welcome to Daily Crunch ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        },
+        {
+            "sectionID": "18",
+            "articleList": [
+                {
+                    "articleId": "1043",
+                    "articleTitle": "Elon Musk's Twitter deal includes a $1 billion ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Sarah pelin"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/03/twitter-crypto-coin-ico.png?w=711"
+        },
+        {
+            "sectionID": "33",
+            "articleList": [
+                {
+                    "articleId": "1067",
+                    "articleTitle": "Movie that makes headlines ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Sarah pelin"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/04/ontime.jpeg?w=600"
+        },
+        {
+            "sectionID": "336",
+            "articleList": [
+                {
+                    "articleId": "1056",
+                    "articleTitle": "Lucid lands 100K EV order from its Saudi investors ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Kirsten Korosec"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/IMG_2580.jpg?w=711"
+        },
+        {
+            "sectionID": "76",
+            "articleList": [
+                {
+                    "articleId": "1048",
+                    "articleTitle": "free speech, censorship, rights and privileg ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Devin Coldewey"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/GettyImages-1229901940.jpg?w=563"
+        },
+        {
+            "sectionID": "396",
+            "articleList": [
+                {
+                    "articleId": "1045",
+                    "articleTitle": "Robinhood to lay off 9% of full-time employees ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/01/robinhood-volatility.jpg?w=711"
+        },
+        {
+            "sectionID": "100",
+            "articleList": [
+                {
+                    "articleId": "1013",
+                    "articleTitle": "Elon Musk's Twitter deal includes a $1 billion ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/03/twitter-crypto-coin-ico.png?w=711"
+        },
+        {
+            "sectionID": "91",
+            "articleList": [
+                {
+                    "articleId": "1012",
+                    "articleTitle": "Daily Crunch: Experts say Musk's open-source vision ",
+                    "adInfo": [
+                        {
+                            "Adpartner": "Christine Hall"
+                        }
+                    ]
+                }
+            ],
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/09/twitter-security.jpg?w=711"
+        }
+    ]
+}
