@@ -59,13 +59,9 @@ body {
     border-top: 2px solid rgb(172, 170, 170);
 }
 
-@media only screen and (max-width: 710px) {
-    .headerSec {
-        width: 62%;
-        margin-left: 3em;
 
-    }
-}
+
+
 
 .sidebarsection {
     display: flex;
@@ -155,7 +151,10 @@ body {
     background-color: white;
     font-size: small;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: 1px solid #D3D3D3;
+    border-bottom: 1px solid #ecebeb;
+    text-align: center;
+    line-height: 1.5em;
+    max-height: 4em;
 }
 
 
@@ -164,4 +163,25 @@ body {
     height: 2em;
     background-color: white;
     border: 1px solid white;
+}
+
+@media only screen and (max-width: 710px) {
+    .headerSec {
+        width: 62%;
+        margin-left: 3em;
+    }
+
+    .card {
+        max-height: 20em;
+    }
+
+    .container {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 0.5em;
+        max-height: 2em;
+    }
+
 }
